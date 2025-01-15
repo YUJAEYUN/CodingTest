@@ -12,6 +12,7 @@ for i in range(n1-n2+1):
                 cnt+=1
             else:
                 cnt = 0
+                break
 if cnt == n2:
     print("Yes")
 else:
