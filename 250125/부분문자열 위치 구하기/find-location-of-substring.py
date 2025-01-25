@@ -6,6 +6,9 @@ flag = True
 for i in range(len(input_str)):
     if input_str[i] == target_str[0]:
         result = i
+        if len(target_str)==1:
+            falg = False
+            break
         for j in range(1, len(target_str)):
             if input_str[i+j] == target_str[j]:
                 flag = False
