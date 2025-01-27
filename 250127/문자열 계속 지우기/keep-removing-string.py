@@ -18,7 +18,7 @@ while True:
                 A.pop(i)
             break
 
-    if flag == False:
+    if flag == False or len(A) == 0:
         break
 
 A = "".join(A)
