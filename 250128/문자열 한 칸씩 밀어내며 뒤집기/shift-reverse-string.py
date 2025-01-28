@@ -6,7 +6,7 @@ queries = [int(input()) for _ in range(q)]
 for i in range(q):
     if len(input_str) == 1:
         print(input_str)
-    if queries[i] == 1:
+    elif queries[i] == 1:
         input_str = input_str[1:] + input_str[0]
         print(input_str)
     elif queries[i] == 2:
