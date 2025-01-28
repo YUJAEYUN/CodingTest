@@ -10,7 +10,7 @@ for i in range(q):
         input_str = input_str[1:] + input_str[0]
         print(input_str)
     elif queries[i] == 2:
-        input_str = input_str[-1] + input_str[0:q-1]
+        input_str = input_str[-1] + input_str[0:len(input_str)-1]
         print(input_str)
     else:
         input_str = input_str[::-1]
