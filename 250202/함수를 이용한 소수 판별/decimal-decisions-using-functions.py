@@ -10,7 +10,7 @@ def is_sosu(n):
 def ans(a,b):
     result = 0
     if a == 1:
-        result += 1
+        pass
     for i in range(a, b+1):
         if is_sosu(i):
             result+=i
