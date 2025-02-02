@@ -7,7 +7,7 @@ def ans(n1,n2,a,b):
     flag = False
     for i in range(n1-n2+1):
         if a[i]==b[0]:
-            if n1==1:
+            if n1==1 or n2==1:
                 return True
             for j in range(1,n2):
                 if a[i+j]==b[j]:
