@@ -5,7 +5,7 @@ pattern = input()
 def isitokay():
     flag = False
     for i in range(len(text)-len(pattern)+1):
-        if len(text) ==1:
+        if len(pattern) ==1:
             if text[i] == pattern[0]:
                 return i
         if text[i]==pattern[0]:
