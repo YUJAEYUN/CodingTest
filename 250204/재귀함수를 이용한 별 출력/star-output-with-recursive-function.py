@@ -7,4 +7,4 @@ def star(n):
     star(n-1)
     print('*'*n)
 
-star(5)
+star(n)
