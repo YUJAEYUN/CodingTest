@@ -14,6 +14,7 @@ for arr in str:
             flag = False
     if flag==True:
         tmp.append(arr)
+        flag = False
 
 tmp.sort()
 
