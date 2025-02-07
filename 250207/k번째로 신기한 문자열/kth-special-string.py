@@ -1,21 +1,12 @@
 n, k, t = input().split()
 n, k = int(n), int(k)
-str = [input() for _ in range(n)]
-flag = False
-str.sort()
-cnt = 0
-# Write your code here!
-for arr in str:
-    flag = False
-    for i in range(len(t)):
-        if len(arr) < len(t):
-            break
-        elif t[i] == arr[i]:
-            flag = True
-        else:
-            flag = False
 
-    if flag==True:
-        cnt+=1
-        if cnt == k:
-            print(arr)
+words = [input().strip() for _ in range(n)]
+words.sort()  # 사전순 정렬
+
+filtered_words = [word for word in words if word.startswith(t)]  # 접두사가 t인 단어만 필터링
+
+if len(filtered_words) >= k:
+    print(filtered_words[k - 1])  # k번째 단어 출력 (0-indexed라 k-1)
+else:
+    print("-1")  # k번째 단어가 존재하지 않으면 -1 출력
