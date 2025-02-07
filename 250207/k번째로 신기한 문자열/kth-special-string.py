@@ -5,10 +5,10 @@ flag = False
 tmp = []
 # Write your code here!
 for arr in str:
-    if len(arr) < len(t):
-        pass
     for i in range(len(t)):
-        if t[i] == arr[i]:
+        if len(arr) < len(t):
+            break
+        elif t[i] == arr[i]:
             flag = True
         else:
             flag = False
