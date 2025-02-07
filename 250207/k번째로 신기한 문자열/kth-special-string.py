@@ -5,6 +5,7 @@ flag = False
 tmp = []
 # Write your code here!
 for arr in str:
+    flag = False
     for i in range(len(t)):
         if len(arr) < len(t):
             break
@@ -12,9 +13,9 @@ for arr in str:
             flag = True
         else:
             flag = False
+
     if flag==True:
         tmp.append(arr)
-        flag = False
 
 tmp.sort()
 
