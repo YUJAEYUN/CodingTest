@@ -2,7 +2,8 @@ n, k, t = input().split()
 n, k = int(n), int(k)
 str = [input() for _ in range(n)]
 flag = False
-tmp = []
+str.sort()
+cnt = 0
 # Write your code here!
 for arr in str:
     flag = False
@@ -15,8 +16,6 @@ for arr in str:
             flag = False
 
     if flag==True:
-        tmp.append(arr)
-
-tmp.sort()
-
-print(tmp[k-1])
+        cnt+=1
+        if cnt == k:
+            print(arr)
