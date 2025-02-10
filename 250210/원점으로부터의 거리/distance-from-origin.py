@@ -10,7 +10,7 @@ for i in range(n):
     num = i+1
     points.append(Distance(int(w), int(h), num))
 
-points.sort(key=lambda x:(abs(-x.w-x.h), num))
+points.sort(key=lambda x:(abs(0-x.w) + abs(0-x.h), num))
 
 for point in points:
     print(f"{point.num}")
