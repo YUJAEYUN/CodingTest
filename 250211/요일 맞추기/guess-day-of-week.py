@@ -29,7 +29,7 @@ while True:
             day=1
 
 if elapsed_days == 0:
-    print("Sun")
+    print("Mon")
 
 else:
     res = elapsed_days%7
