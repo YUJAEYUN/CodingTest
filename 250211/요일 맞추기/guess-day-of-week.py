@@ -8,6 +8,8 @@ elapsed_days = 0
 
 while True:
     if month == m2 and day == d2:
+        if flag == False:
+            elapsed_days*=-1
         break
     elapsed_days+=1
     day+=1
@@ -25,9 +27,10 @@ while True:
             month+=1
             day=1
 
-if flag == False:
-    elapsed_days*=-1
+if elapsed_days == 0:
+    print("Sun")
 
-res = elapsed_days%7
-days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
-print(days[res])
+else:
+    res = elapsed_days%7
+    days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+    print(days[res])
