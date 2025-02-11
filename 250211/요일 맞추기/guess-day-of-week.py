@@ -24,8 +24,10 @@ while True:
         if day==31:
             month+=1
             day=1
+
 if flag == False:
     elapsed_days*=-1
+
 res = elapsed_days%7
 days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 print(days[res])
