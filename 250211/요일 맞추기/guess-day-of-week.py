@@ -1,4 +1,5 @@
 m1, d1, m2, d2 = map(int, input().split())
+flag = True
 if m1>m2 or (m1==m2 and d1>d2):
     m1,d1,m2,d2 = m2,d2,m1,d1
     flag = False
