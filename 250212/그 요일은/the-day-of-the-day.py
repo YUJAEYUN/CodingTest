@@ -3,7 +3,7 @@ A = input()
 
 # Write your code here!
 month, day = m1, d1
-elapsed_days = 0
+elapsed_days = 1
 
 while True:
     if month == m2 and day == d2:
@@ -25,7 +25,7 @@ while True:
             day=1
 
 days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
-cnt = elapsed_days//7
+cnt = elapsed_days//7 + 1
 if A == days[elapsed_days%7]:
     cnt+=1
 
