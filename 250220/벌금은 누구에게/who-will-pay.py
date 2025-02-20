@@ -8,5 +8,6 @@ for i in range(M):
     if li[num] >= K:
         flag = True
         print(num)
+        break
 if flag == False:
     print("-1")
