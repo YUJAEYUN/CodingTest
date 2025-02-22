@@ -21,13 +21,13 @@ for _ in range(m):
         time_b += 1
 
 # A와 B 중 더 앞서 있는 경우를 확인합니다.
-# A가 리더면 1, B가 리더면 2로 관리합니다.
+# A가 리더면 1, B가 리더면 2, 공동리더면 3
 leader, ans = 0, 0
 for i in range(1, time_a):
     if pos_a[i] > pos_b[i]:
         # 기존 리더가 B였다면
         # 답을 갱신합니다.
-        if leader == 2 or leader == 3:
+        if leader !=1:
             ans += 1
 
         # 리더를 A로 변경합니다.
@@ -35,14 +35,15 @@ for i in range(1, time_a):
     elif pos_a[i] < pos_b[i]:
         # 기존 리더가 A였다면
         # 답을 갱신합니다.
-        if leader == 1 or leader==3:
+        if leader !=2:
             ans += 1
 
         # 리더를 B로 변경합니다.
         leader = 2
     elif pos_a[i] == pos_b[i]:
+        if leader != 3:
+            ans+=1
+        
         leader = 3
-
-        ans+=1
         
 print(ans)
