@@ -21,6 +21,7 @@ for i in range(t):
     c,r = c+dxs[dir_num], r+dys[dir_num]
     if not in_range(r,c):
         dir_num=3-dir_num
+        continue
+    c,r = c+dxs[dir_num], r+dys[dir_num]
     if i == t-1:
         print(r, c)
-    c,r = c+dxs[dir_num], r+dys[dir_num]
