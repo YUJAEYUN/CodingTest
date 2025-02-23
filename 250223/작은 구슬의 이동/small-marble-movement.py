@@ -14,14 +14,14 @@ else:
 # Write your code here!
 dxs,dys = [0,1,-1,0], [1,0,0,-1] #북동서남 
 
-def in_range(r,c):
+def in_range(c,r):
     return 0<=r and r<n and 0<=c and c<n
 
-for i in range(t):
-    c,r = c+dxs[dir_num], r+dys[dir_num]
-    if not in_range(r,c):
+for i in range(t+1):
+    nc,nr = c+dxs[dir_num], r+dys[dir_num]
+    if not in_range(nc,nr):
         dir_num=3-dir_num
-        continue
+        pass
     c,r = c+dxs[dir_num], r+dys[dir_num]
 
 print(r, c)
