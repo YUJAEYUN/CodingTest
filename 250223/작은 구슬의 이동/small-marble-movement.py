@@ -12,7 +12,7 @@ else:
     dir_num=2
 
 # Write your code here!
-dxs,dys = [0,1,-1,0], [1,0,0,-1] #북동서남 
+dxs,dys = [0,1,-1,0], [-1,0,0,1] #북동서남 
 
 def in_range(c,r):
     return 1<=r and r<n+1 and 1<=c and c<n+1
