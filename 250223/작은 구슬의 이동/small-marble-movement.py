@@ -23,5 +23,5 @@ for i in range(t):
         dir_num=3-dir_num
         continue
     c,r = c+dxs[dir_num], r+dys[dir_num]
-    if i == t-1:
-        print(r, c)
+
+print(r, c)
