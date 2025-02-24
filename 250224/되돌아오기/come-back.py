@@ -30,6 +30,8 @@ for i in range(n):
             print(time)
             break
         floor[x][y] = 1
+    if flag == True:
+        break
 
 if flag == False:
     print('-1')
