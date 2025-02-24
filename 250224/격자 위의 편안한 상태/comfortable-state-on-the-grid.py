@@ -1,19 +1,19 @@
 N, M = map(int,input().split())
 
 floor = [[0] * (N) for _ in range(N)]
+dx, dy = [-1, 0, 1, 0], [0, -1, 0, 1]
 
-def is_range(x,y):
-    return x>=0 and x<N and y>=0 and y<N
+def is_range(x, y):
+    return 0 <= x < N and 0 <= y < N
 
-def is_check(a,b):
-    dx,dy = [-1,0,1,0], [0,-1,0,1]
+def is_check(a, b):
     cnt = 0
-    for _ in range(4):
-        if is_range(a+dx[_],b+dy[_]) and floor[a+dx[_]][b+dy[_]] == 1:
-            cnt+=1
-        if cnt==3:
-            return True
-    return False
+    for i in range(4):  # i 사용
+        nx, ny = a + dx[i], b + dy[i]
+        if is_range(nx, ny) and floor[nx][ny] == 1:
+            cnt += 1
+    return cnt == 3
+
 
 for i in range(M):
     r,c = map(int,input().split())
