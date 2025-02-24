@@ -5,11 +5,11 @@ floor = [[0] * (N) for _ in range(N)]
 def is_range(x,y):
     return x>=0 and x<N and y>=0 and y<N
 
-def is_check(r,c):
+def is_check(a,b):
     dx,dy = [-1,0,1,0], [0,-1,0,1]
     cnt = 0
     for _ in range(4):
-        if is_range(r+dx[_],c+dy[_]) and floor[r+dx[_]][c+dy[_]] == 1:
+        if is_range(a+dx[_],b+dy[_]) and floor[a+dx[_]][b+dy[_]] == 1:
             cnt+=1
         if cnt==3:
             return True
