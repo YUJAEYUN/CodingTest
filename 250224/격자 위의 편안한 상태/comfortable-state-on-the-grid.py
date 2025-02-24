@@ -1,21 +1,29 @@
-N, M = map(int,input().split())
+n, m = tuple(map(int,input().split()))
+arr = [
+    [0] * n
+    for _ in range(n)
+]
 
-floor = [[0] * (N+2) for _ in range(N+2)]
-    
-def is_check(r,c):
-    dx,dy = [-1,0,1,0], [0,-1,0,1]
-    cnt = 0
-    for i in range(4):
-        if floor[r+dx[i]][c+dy[i]] == 1:
+dxs = [0,1,0,-1]
+dys = [1,0,-1,0]
+
+def in_range(x,y):
+    return 0<=x and x<n and 0<=y and y<n
+
+def adjacent_cnt(x,y):
+    cnt=0
+    for dx,dy in zip(dxs,dys):
+        nx,ny = x+dx, y + dy
+        if in_range(nx,ny) and arr[nx][ny]==1:
             cnt+=1
-        if cnt==3:
-            return True
-    return False
+    return cnt
 
-for i in range(M):
-    r,c = map(int,input().split())
-    floor[r][c] = 1
-    if is_check(r,c):
-        print('1')
+for _ in range(m):
+    x,y = tuple(map(int,input().split()))
+    x-=1
+    y-=1
+
+    if adjacent_cnt(x,y)==3:
+        print(1)
     else:
-        print('0')
+        print(0)
