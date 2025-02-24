@@ -1,6 +1,6 @@
 N, M = map(int,input().split())
 
-floor = [[0] * (N+1) for _ in range(N+2)]
+floor = [[0] * (N+2) for _ in range(N+3)]
     
 def is_check(r,c):
     dx,dy = [-1,0,1,0], [0,-1,0,1]
