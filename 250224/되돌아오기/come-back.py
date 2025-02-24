@@ -25,7 +25,7 @@ for i in range(n):
     for _ in range(num):
         x,y = x+dxs[dir_num], y+dys[dir_num]
         time+=1
-        if floor[x][y] == 1 and x==OFFSET and y==OFFSET:
+        if x==OFFSET and y==OFFSET and floor[x][y] == 1:
             flag = True
             print(time)
             break
