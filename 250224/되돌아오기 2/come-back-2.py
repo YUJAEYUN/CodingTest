@@ -11,7 +11,7 @@ for req in n:
     elif req == 'R':
         dir_num = (dir_num+1)%4
         cnt+=1
-    else:
+    elif req == 'F':
         x, y = x+dx[dir_num], y+dy[dir_num]
         cnt+=1
     
@@ -19,6 +19,7 @@ for req in n:
         flag = True
         print(cnt)
         break
+
 if flag == False:
     print('-1')
 
