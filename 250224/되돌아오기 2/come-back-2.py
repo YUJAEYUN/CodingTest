@@ -4,6 +4,7 @@ x,y = 0,0
 dx,dy = [1,0,-1,0],[0,-1,0,1] # 동남서북
 dir_num = 3
 cnt=0
+flag = False
 for req in n:
     if req == 'L':
         dir_num = (dir_num-1)%4
