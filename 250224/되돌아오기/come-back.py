@@ -28,6 +28,7 @@ for i in range(n):
         if floor[x][y] == 1 and x==OFFSET and y==OFFSET:
             flag = True
             print(time)
+            break
         floor[x][y] = 1
 
 if flag == False:
