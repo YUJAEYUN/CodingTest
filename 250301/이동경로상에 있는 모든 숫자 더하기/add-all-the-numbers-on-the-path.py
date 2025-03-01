@@ -10,7 +10,6 @@ x, y = n//2, n//2
 dir_num = 0
 dxs, dys = [-1,0,1,0], [0,1,0,-1] #북 동 남 서
 result = board[x][y]
-board[x][y] = 0
 
 for i in range(T):
     if str[i] == 'L':
@@ -23,7 +22,6 @@ for i in range(T):
         if in_range(nx,ny):
             x, y = nx, ny
             result += board[x][y]
-            board[x][y] = 0
 
         else:
             x, y = x, y
