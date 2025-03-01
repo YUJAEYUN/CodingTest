@@ -31,7 +31,7 @@ for i in range(2, n * m+1):
             answer[x][y] = 65+k
             k += 1
             if k > 25:
-                k = 1
+                k = 0
             break
         else:
             # 나아갈 수 없다면 시계방향으로 90'를 회전하여 
