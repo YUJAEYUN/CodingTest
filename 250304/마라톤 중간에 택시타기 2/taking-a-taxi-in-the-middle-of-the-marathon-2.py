@@ -8,7 +8,7 @@ min_distance = 9999999
 
 for i in range(1,n-1):
     point_x, point_y = 0,0
-    distance = x[point_x] + y[point_y]
+    distance = 0
 
     for j in range(1,n):
         if i == j:
