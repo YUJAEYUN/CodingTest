@@ -1,12 +1,13 @@
 a = list(input())
+flag = True
 
 for i in range(len(a)):
-    if len(a) == 1 and a[i] == '1':
-        a[i] = '0'
-
-    elif a[i] == '0':
+    if a[i] == '0':
         a[i] = '1'
+        flag = False
         break
+if flag == True:
+    a[-1] = '0'
 
 # Please write your code here.
 def binary_to_decimal(arr):
