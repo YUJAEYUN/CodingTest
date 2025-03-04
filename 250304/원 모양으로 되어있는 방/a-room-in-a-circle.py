@@ -1,6 +1,6 @@
 n = int(input())
 a = [int(input()) for _ in range(n)]
-min_ans = 9999999
+min_ans = 99999999999
 # Please write your code here.
 for i in range(n):
     ans = 0
