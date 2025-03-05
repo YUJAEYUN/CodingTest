@@ -1,0 +1,11 @@
+n = int(input())
+str = input()
+cnt=0
+# Please write your code here.
+for i in range(n-2):
+    for j in range(n-1):
+        for k in range(n):
+            if str[i]=='C' and str[j]=='O' and str[k]=='W':
+                cnt+=1
+
+print(cnt)
