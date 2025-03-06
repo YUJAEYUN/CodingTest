@@ -31,6 +31,7 @@ for i in range(19):
             if curt == 5:
                 print(board[i][j])
                 print(i + 2*dx + 1, j + 2*dy + 1)
+                break
 
 
                 
