@@ -1,7 +1,7 @@
 N, K = map(int, input().split())
 MAX_LEN = 100
 
-arr = [0] * (MAX_LEN)
+arr = [0] * (MAX_LEN+1)
 
 for _ in range(N):
     candy, pos = map(int,input().split())
