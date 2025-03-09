@@ -5,7 +5,7 @@ arr = [0] * (MAX_LEN)
 
 for _ in range(N):
     candy, pos = map(int,input().split())
-    arr[pos] = candy
+    arr[pos] += candy # 제한조건 같은 위치에 여러 바구니가 놓여 있는 것이 가능합니다...를 못봄
 
 # Please write your code here.
 max_candy = 0
