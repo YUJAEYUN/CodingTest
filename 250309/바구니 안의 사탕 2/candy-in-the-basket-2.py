@@ -1,7 +1,7 @@
 N, K = map(int, input().split())
 MAX_LEN = 100
 
-arr = [0] * (MAX_LEN+1)
+arr = [0] * (MAX_LEN)
 
 for _ in range(N):
     candy, pos = map(int,input().split())
@@ -10,7 +10,7 @@ for _ in range(N):
 # Please write your code here.
 max_candy = 0
 
-for i in range(K, MAX_LEN-K+1): # 중앙값의 인덱스는 i
+for i in range(K, MAX_LEN-K): # 중앙값의 인덱스는 i
     candy_count = 0
     tmp_arr = arr[i-K:i+K+1] # 이거 자꾸 빼먹네 슬라이싱 끝값은 포함 안되서 +1 해야함.......
 
