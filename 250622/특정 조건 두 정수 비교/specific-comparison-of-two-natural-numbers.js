@@ -6,11 +6,13 @@ let B = Number(input[1]);
 let result1, result2;
 
 if (A<B){
-    result1 = 1, result2 = 0
+    result1 = 1, result2=0
 }else{
     result1 = 0
     if (A===B){
         result2 = 1
+    }else{
+        result2 = 0
     }
 };
 
