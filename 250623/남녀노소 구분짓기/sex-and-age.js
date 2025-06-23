@@ -14,7 +14,7 @@ if (gender === 0){
 }
 else{
     if (age>=19){
-        console.log('WAMAN')
+        console.log('WOMAN')
     }
     else{
         console.log('GIRL')
