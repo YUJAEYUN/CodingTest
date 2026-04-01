@@ -7,12 +7,15 @@ b = [t[1] for t in times]
 
 ans = 0
 
-for i in range(n//2):
+for i in range(n):
     tmp = 0    
-    for j in range(i+1,n):
-        if not a[i] > a[j] and b[i] > b[j]:
+    for j in range(n):
+        if j == i:
+            continue
+        
+        if not ((a[i] < a[j] and b[i] < b[j]) or (a[i] > a[j] and b[i] > b[j])):
             tmp+=1
-    if tmp ==0:
+    if tmp == 0:
         ans+=1
 print(ans)
         
