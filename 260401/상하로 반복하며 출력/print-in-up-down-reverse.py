@@ -11,6 +11,7 @@ for i in range(N):
             arr2d[j][i] = N-tmp+1
         tmp+=1
 
-for _ in arr2d:
-    print(_, end="")
-print()
+for j in range(N):
+    for k in range(N):
+        print(arr2d[j][k],end="")
+    print()
