@@ -1,6 +1,6 @@
 N, B = map(int, input().split())
 P = [int(input()) for _ in range(N)]
-
+P.sort()
 # Please write your code here.
 ans = 0
 
