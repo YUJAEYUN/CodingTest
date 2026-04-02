@@ -8,15 +8,13 @@ for i in range(N):
     tmp = 0
     cnt = 0
     for j in range(N):
-        cnt +=1
-        if not tmp > B:
+        if tmp < B:
+            cnt +=1
             if i == j:
                 tmp += P[j]//2
             else:
                 tmp += P[j]
-        else:
-            ans = max(ans, cnt-1)
-
+        if tmp > B:
+            cnt-=1
+    ans = max(ans,cnt)
 print(ans)
-    
-            
